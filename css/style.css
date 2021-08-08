@@ -1,0 +1,922 @@
+:root{
+  --gold:#d2be98;
+  --dk-blue:#344256;
+  --lt-grey:#eaedef;
+  --poppins:'Poppins', sans-serif;
+}
+body{
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight:normal;
+  min-width: 320px;
+}
+
+
+.hidden{
+  display: none;
+}
+header{
+  position: sticky;
+ position: -webkit-sticky;
+ top: 0;
+ background-color: white;
+}
+
+h1{
+  margin: 0;
+}
+/*Header section*/
+h1 > a{
+  font-family: var(--poppins);
+  color:var(--gold);
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+h1 > a:hover,
+h1 > a:active{
+  color:var(--dk-blue);
+}
+
+h1 > a:hover>svg,
+h1 > a:hover>svg{
+  fill:var(--dk-blue);
+}
+
+.fa-bars{
+  background-color: var(--gold);
+  font-size: 1rem;
+  padding: 1rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input{
+  outline: none;
+}
+
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1 > a >svg{
+  height: 2rem;
+  width: 2rem;
+  fill:var(--gold);
+
+}
+
+
+header > div{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 1.5rem;
+  flex-wrap: wrap;
+  position: relative;
+  box-shadow: 0 0 4px 0 lightgrey;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction:column;
+  margin: 0;
+  padding: 0;
+  background-color: white;
+}
+nav{
+  display: none;
+  position: absolute;
+  top:125%;
+  left: 0;
+  right:0;
+}
+nav ul li{
+  border-bottom: 1px solid lightgrey;
+  padding: 0.5rem 1.5rem;
+}
+
+nav ul li:first-child{
+  border-top: 1px solid lightgrey;
+}
+nav ul li a{
+  color:var(--dk-blue);
+  font-size: 1.875rem;
+  font-family:  var(--poppins);
+}
+
+
+nav ul li a:hover,
+nav ul li a:active{
+  color:var(--gold);
+}
+
+
+.sr-only{
+  position: absolute;
+  left:-10000px;
+  visibility: hidden;
+}
+
+/*main Section Index*/
+
+
+
+main h2{
+  font-family:  'Poppins', sans-serif;
+  font-size: 2.25rem;
+  font-weight: bold;
+}
+
+main > section:first-child{
+  padding: 1.5rem 1.5rem;
+}
+
+main > section:first-child h2{
+  color:var(--dk-blue);
+}
+
+main > section:first-child > form>div {
+  display: flex;
+}
+main > section:first-child > form>div > input{
+  padding: 0.5rem;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
+  width: 100%;
+}
+
+main > section:first-child > form>div >div > svg{
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+main > section:first-child > form>div >div > svg path{
+  fill:white;
+}
+
+
+main > section:first-child>form>div > div{
+  background-color: var(--dk-blue);
+  padding: 0.5rem 1.2rem;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+}
+main >section:nth-child(2){
+    background-color: var(--dk-blue);
+}
+main > section:nth-child(2)>div >div:first-child{
+  padding:1.5rem;
+  color:white;
+}
+
+main > section:nth-child(2)>div >div:first-child>a{
+  color:var(--dk-blue);
+  background-color: var(--gold);
+  padding:1rem;
+  font-size: 1.125rem;
+  border-radius: 8px;
+  font-family: var(--poppins);
+}
+
+main > section:nth-child(2)>div >div:first-child>a:hover,
+main > section:nth-child(2)>div >div:first-child>a:active,
+main > section:nth-child(4)>div > a:hover,
+main > section:nth-child(4)>div > a :active{
+  color:var(--gold);
+  background-color: white;
+}
+
+.fa-chevron-right{
+  font-size: 3rem;
+  vertical-align: middle;
+  padding-bottom: 5px;
+}
+
+
+main > section:nth-child(2)>div >div:last-child {
+  background-color: var(--dk-blue);
+  margin: 0;
+  padding: 1.5rem;
+
+}
+
+main > section:nth-child(2)>div >div:last-child >section> h3{
+  margin: 0;
+  font-size: 1.25rem;
+  color: var(--dk-blue);
+  font-weight: bold;
+
+}
+
+main > section:nth-child(2)>div >div:last-child > section{
+  background-color: white;
+  padding:1rem 0.5rem;
+  text-align: left;
+  color:black;
+}
+
+main > section:nth-child(2)>div >div:last-child > section > svg{
+  height: 4rem;
+  width: 4rem;
+  margin: 1rem 0;
+}
+
+main > section:nth-child(2)>div >div:last-child > section:first-child > svg line,
+main > section:nth-child(2)>div >div:last-child > section:first-child > svg polygon{
+  stroke:var(--dk-blue);
+}
+
+
+main > section:nth-child(2)>div >div:last-child > section:first-child > svg path{
+  stroke:var(--gold);
+}
+
+ section > svg path,
+ section > svg line,
+main > section:nth-child(2)> div >div:last-child > section > svg polyline{
+  stroke:var(--dk-blue);
+}
+
+main > section:nth-child(2)> div >div:last-child > section > svg polygon,
+main > section:nth-child(2)> div >div:last-child > section > svg circle{
+  stroke:var(--gold);
+}
+
+.coloring{
+  stroke:var(--gold);
+}
+
+
+main > section:nth-child(2)>div >div:last-child > section> a{
+  color:var(--dk-blue);
+  font-size: 1rem;
+  font-weight: bold;
+  padding-bottom: 5px;
+  border-bottom: 2px solid var(--gold);
+}
+
+
+main > section:nth-child(2)>div >div:last-child > section> a:hover,
+main > section:nth-child(2)>div >div:last-child > section> a:active{
+  color:var(--gold);
+  background-color: var(--dk-blue);
+  border-bottom: 2px solid var(--dk-blue);
+}
+
+main> section:nth-child(2)> div > div:last-child > section:first-child{
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+main > section:nth-child(2)>div >div:last-child > section:last-child{
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  padding-bottom: 2.5rem;
+}
+
+main > section:nth-child(3) {
+  color:var(--dk-blue);
+  font-weight: bold;
+}
+
+main > section:nth-child(3)>h2{
+  margin-left: 1.5rem;
+}
+
+.horizontal-content{
+  padding:0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+
+}
+
+.horizontal-content::-webkit-scrollbar{
+  background: transparent;
+}
+.horizontal-content div > div{
+  display: flex;
+  padding: 2rem 0;
+}
+
+
+.horizontal-content div > div{
+  padding:2rem 2rem 2rem 0;
+}
+
+.horizontal-content div > div > img{
+  max-width: fit-content;
+}
+.horizontal-content div > div> p{
+  margin-left: 8px;
+}
+
+main > section:nth-child(4){
+  background-color: var(--lt-grey);
+  padding:1.5rem;
+}
+
+main > section:nth-child(4)>div >div>h2{
+  color:var(--dk-blue);
+}
+
+
+
+main > section:nth-child(4)> div>section {
+  background-color: white;
+  margin: 1.5rem 0;
+  border-radius: 5px;
+  max-width:750px;
+}
+
+main > section:nth-child(4)>div>section> div>picture> img,
+main > section:nth-child(4)>div>section>div >picture{
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  width:100%;
+
+}
+main> section:nth-child(4)>div>section>div:last-child{
+  padding:0.5rem;
+}
+main > section:nth-child(4)>div > a{
+  color:var(--dk-blue);
+  background-color: var(--gold);
+  padding:1rem;
+  font-size: 1.125rem;
+  border-radius: 8px;
+  font-family: var(--poppins);
+}
+
+main > section:nth-child(4)>div>section>div>h3{
+  color:var(--dk-blue);
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+main > section:nth-child(5){
+  padding: 1.5rem;
+  background-color: var(--dk-blue);
+  color:white;
+}
+main > section:nth-child(5)>div>h2{
+  color:white;
+  font-family: var(--poppins);
+  font-size: 2.25rem;
+}
+main > section:nth-child(5)>div>form{
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap:nowrap;
+}
+
+main>section:nth-child(5)>div>form>div{
+  flex-basis: 95%;
+}
+main > section:nth-child(5)>div>form>div>input{
+  width: 100%;
+  padding: 0.5rem;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius:  8px;
+}
+main > section:nth-child(5)>div>form>input[type=submit]{
+  margin-left: -5px;
+  color:black;
+  background-color: white;
+  border-bottom-right-radius: 8px;
+  border-top-right-radius:  8px;
+  padding: 0.5rem 0.5rem;
+  border-left: 1px solid var(--dk-blue);
+}
+
+
+input:invalid{
+  border:1px solid red;
+}
+
+input:required:valid{
+  background-image: url('../img/checkmark.svg');
+  background-repeat: no-repeat;
+  background-position: right 5px center;
+}
+
+
+
+
+/* Project Page Main*/
+
+main > div > section:first-child{
+  margin: 1.5rem;
+}
+main > div > section >div>h2{
+  color:var(--dk-blue);
+}
+
+main > div > section> div>section>h3{
+  color:var(--dk-blue);
+}
+
+
+.background-image{
+  background-image: url('../img/form-bg-sm.webp');
+  min-height: 250px;
+  background-position:center right -250px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.background-image>div>h2{
+  color:var(--dk-blue);
+  padding-top: 25%;
+  margin-left: 1.5rem;
+}
+
+
+
+button[type=submit]{
+  padding: 0.2rem 2rem;
+  background-color: var(--gold);
+  color:var(--dk-blue);
+  font-weight: bold;
+  border-radius: 5px;
+  border:none;
+}
+
+main> div> section:nth-child(2)>div{
+  background-color: var(--dk-blue);
+  padding-bottom: 2rem;
+}
+
+main > div>section:nth-child(2)>div>form{
+  padding: 1.5rem;
+}
+main > div>section:nth-child(2)>div>form>div> label,
+main > div>section:nth-child(2)>div>form>div> input,
+textarea
+{
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+
+main > div>section:nth-child(2)>div>form>div>input, textarea, select{
+  margin-top: 0.5rem;
+}
+main > div>section:nth-child(2)>div>form>div:nth-child(2)>label:after,
+main > div>section:nth-child(2)>div>form>div:nth-child(3)>label:first-child:after{
+  content: " *";
+  color:red;
+  font-size: 1.5rem;
+}
+
+main > div>section:nth-child(2)>div>form>div>label,
+main > div>section:nth-child(2)>div>form>p{
+  color:white;
+}
+main > div>section:nth-child(2)>div>form>div>input,
+select{
+  padding: 0.5rem;
+}
+main > div>section:nth-child(2)>div>form>div>input,
+main > div>section:nth-child(2)>div>form>div>select,
+main > div>section:nth-child(2)>div>form>div>textarea{
+  border-radius: 8px;
+}
+
+select{
+  display: block;
+  width: 100%;
+  margin-bottom: 0.5rem;
+}
+textarea{
+  min-height: 300px;
+  padding: 0.5rem;
+}
+
+button[type=submit]:hover,
+button[type=submit]:active {
+  color:var(--gold);
+  background: white;
+
+}
+
+
+/*Footer section*/
+footer{
+  background-color: var(--dk-blue);
+  font-size: 1rem;
+}
+footer > section{
+  background-color: white;
+  padding: 1.5rem;
+}
+footer > div> p{
+  color:white;
+}
+footer > div{
+  padding: 1.5rem;
+}
+
+footer > section> div>h2>a{
+  color:var(--gold);
+  font-family: var(--poppins);
+  font-size: 1.375rem;
+  font-weight: bold;
+}
+
+
+footer > section> div>h2>a:hover,
+footer > section> div>h2>a:active{
+  color:var(--dk-blue);
+}
+
+footer > section> div>h2>a:hover>svg,
+footer > section> div>h2>a:active>svg{
+  fill:var(--dk-blue);
+}
+footer h2 svg{
+  fill: var(--gold);
+  height: 2rem;
+  width: 2rem;
+}
+
+
+footer section div ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  padding-bottom: 1.5rem;
+  line-height: 2.5;
+}
+
+footer section div ul li:first-child{
+  color:var(--dk-blue);
+  font-weight: bold;
+  font-size:1.125rem;
+}
+
+footer section div ul li a{
+  border-bottom: 2px solid var(--gold);
+  color:black;
+  padding-bottom: 0.3rem;
+}
+
+footer section div ul li a:hover,
+footer section div ul li a:active{
+  background-color: var(--gold);
+  color:white;
+}
+
+@media (min-width:500px) {
+  .background-image{
+    background-position: center right;
+  }
+
+}
+
+@media (min-width:750px) {
+
+  main > section:nth-child(2)>div >div:last-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1.5rem;
+  }
+main > section:nth-child(4)>div >div>p,
+  main > section:nth-child(2)>div>div:first-child>p{
+  width: 60ch;
+}
+
+  main section:nth-child(2)>div>div:last-child>*{
+    flex-basis: 49%;
+    margin-bottom: 1rem;
+    border-radius: 8px;
+  }
+  main section:nth-child(2)>div>div:last-child>section:first-child,
+  main section:nth-child(2)>div>div:last-child>section:nth-child(2)
+  {
+        padding-bottom:2rem;
+  }
+
+
+
+
+  textarea{
+    min-height: 200px;
+  }
+
+main > section:nth-child(4)>div>section{
+  display: flex;
+  border-radius: 5px;
+  flex-wrap: nowrap;
+  max-width: 100%;
+}
+main >section:nth-child(4)>div>section>div{
+  flex-basis: 50%;
+}
+
+
+main > section:nth-child(4)>div>section > div>picture>img {
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 0;
+
+}
+
+main > section:nth-child(2)>div >div:last-child > section>p{
+  width: 32ch;
+}
+
+/*Main Project Page*/
+
+main >div> section:first-child> div{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-between;
+}
+
+main > div > section:first-child > div>h2{
+  flex-basis: 100%;
+}
+
+main > div > section:first-child > div>section{
+  flex-basis: 49%;
+}
+
+
+
+.background-image{
+  background-image: url('../img/form-bg-md.webp');
+}
+
+.background-image>div>h2{
+  padding-top: 13%;
+}
+
+
+
+
+main > div>section:nth-child(2)>div>form{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+main > div>section:nth-child(2)>div>form>p{
+  flex-basis: 100%;
+}
+main > div>section:nth-child(2)>div>form>div{
+  flex-basis: 49%;
+}
+
+main > div>section:nth-child(2)>div>form>div:nth-child(6){
+  flex-basis: 100%;
+}
+
+main > div>section:nth-child(2)>div>form>div:nth-child(6)>input{
+  display: block;
+  width: 49%;
+}
+
+select{
+  width: 49%;
+}
+main > div>section:nth-child(2)>div>form>div:last-child{
+  flex-basis: 100%;
+}
+
+main > div>section:nth-child(2)>div>form>div:last-child>button{
+  max-width: 10rem;
+}
+
+
+/*Footer */
+
+  footer > section>div:first-child{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  footer >section div h2{
+    flex-basis: 100%;
+
+  }
+  footer >section div > ul{
+    flex-basis: calc(96% / 3);
+  }
+
+}
+
+@media (min-width:1160px) {
+  .menu-btn{
+    display: none;
+  }
+  nav{
+    display: inline-block !important;
+    position: static;
+  }
+
+  nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  header > div{
+    display: flex;
+    align-self: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+
+  header > div > h1{
+    flex-basis: 40%;
+  }
+
+  header > div > nav{
+    flex-basis: 60%;
+  }
+
+  nav ul li{
+    border:none;
+    padding-top: 1.30rem;
+    padding-left: 1rem;
+  }
+
+  nav ul li a{
+    font-size: 1.125rem;
+  }
+  nav ul li:first-child{
+    border: none;
+  }
+
+main > section:nth-child(2)>div{
+  display: flex;
+}
+
+
+main > section:nth-child(2)>div >div:first-child{
+  flex-basis: 40%;
+}
+main> section:nth-child(2)>div >div:last-child{
+  flex-basis: 60%;
+
+}
+
+
+
+
+main > section:nth-child(4)>div{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main > section:nth-child(4)>div>div{
+  flex-basis: 100%;
+}
+
+main > section:nth-child(4)>div > a{
+  padding: 0.5rem 1rem;
+}
+
+
+main > section:nth-child(4)>div>section{
+  flex-basis: calc(97% / 3);
+}
+  main > section:nth-child(4)>div>section{
+    display: flex;
+    border-radius: 5px;
+    flex-wrap: wrap;
+  }
+  main >section:nth-child(4)>div>section>div{
+    flex-basis: 100%;
+  }
+  main > section:nth-child(4)>div>section > div>picture>img {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+
+  }
+
+  main > section:first-child> form>div>input{
+    width: 50%;
+  }
+
+  main>section:nth-child(5)>div>form>div {
+    flex-basis: 50%;
+}
+
+
+/*Main project*/
+
+
+
+main > div > section:first-child > div>section{
+  flex-basis: calc(97% / 4);
+}
+
+.background-image{
+  background-image: url('../img/form-bg-lg.webp');
+  height: 300px;
+
+
+}
+
+.background-image>div>h2{
+  padding-top: 10%;
+}
+
+
+main > div>section:nth-child(2)>div>form>div:nth-child(6){
+  flex-basis:49%;
+}
+
+select{
+  width: 50%;
+}
+
+main > div>section:nth-child(2)>div>form>div:nth-child(7){
+  flex-basis: 100%;
+}
+textarea{
+  width: 49%;
+  display: block;
+}
+/*footer*/
+  footer >section div> h2{
+    flex-basis: calc(94% / 4);
+  }
+  footer > section div> ul{
+    flex-basis: calc(94% / 4);
+  }
+
+}
+
+
+@media (min-width:1300px) {
+  header > div{
+    box-shadow:0 0 0 0;
+    padding-left:0;
+    padding-right:0;
+  }
+  header {
+    box-shadow: 0 0 3px 0 lightgrey;
+  }
+
+  main > section:nth-child(2)>div >div:last-child > section>p{
+    width: 45ch;
+  }
+
+  main > section:first-child {
+    padding-left:0;
+    padding-right: 0;
+  }
+
+  main > section:nth-child(2)>div > div:first-child{
+    padding: 1rem 1rem 1rem 0;
+  }
+
+    main > section:nth-child(2)>div > div:last-child{
+      padding:1rem 0 1rem 1rem;
+    }
+  main > section:nth-child(3)>h2,.horizontal-content {
+    margin:1rem 0;
+    padding: 1rem 0;
+  }
+
+  main > section:nth-child(5), main > section:nth-child(4){
+    padding: 1rem 0;
+  }
+
+  main>div>section:first-child{
+    margin: 1rem 0;
+  }
+
+  .background-image>div>h2{
+    margin: 0;
+  }
+
+  main > section:nth-child(2)>div >div:last-child>section:nth-child(3)>p{
+    padding-bottom: 0;
+  }
+
+  main > div > section:nth-child(2)>div > form{
+    padding: 1.5rem 0;
+  }
+
+  footer > div{
+    padding: 1.5rem 0;
+  }
+  footer>section{
+    padding: 1.5rem 0;
+  }
+  .container{
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+
+
+}
